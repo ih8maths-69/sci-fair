@@ -29,6 +29,7 @@ uranus_orbit=helix(pos=sun.pos,axis=vector(0,1,0),radius=1200,thickness=3,color=
 neptune_orbit=helix(pos=sun.pos,axis=vector(0,1,0),radius=1400,thickness=3,color=color.blue)
 
 
+info_text=label(pos=vector(300,0,0),text='GOLDILOCKS ZONE',color=color.yellow,height=9,box=False)
 mercury_text=label(pos=vector(138.9,140,0),text='Mercury',height=13,box=False)
 venus_text=label(pos=vector(210.2,211,0),text='Venus',height=13,box=False)
 earth_text=label(pos=vector(280,200,0),text='Eath',height=13,box=False)
@@ -60,7 +61,7 @@ ring_rotations=0
 
 
 while True:
-    rate(30)
+    rate(15)
     mercury.rotate(angle=mercuryAngle,axis=vector(0,1,0),origin=sun.pos)
     venus.rotate(angle=venusAngle,axis=vector(0,1,0),origin=sun.pos)
     earth.rotate(angle=earthAngle,axis=vector(0,1,0),origin=sun.pos)
@@ -94,4 +95,3 @@ while True:
 
     
  
-
